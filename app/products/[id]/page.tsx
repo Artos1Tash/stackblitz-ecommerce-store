@@ -29,7 +29,7 @@ const ProductPage = () => {
           }
           const data: Product = await response.json();
           setProduct(data);
-        } catch (error) {
+        } catch (error: any) {
           setError(error.message);
         } finally {
           setLoading(false); // Stop loading after fetch is done
