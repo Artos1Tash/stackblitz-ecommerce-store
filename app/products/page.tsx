@@ -18,7 +18,7 @@ const ProductsPage = () => {
 
   return (
     <div className="container mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {products.map((product) => (
+      {products.map((product: any) => (
         <div
           key={product.id}
           className="max-w-sm rounded overflow-hidden shadow-lg bg-white"
